@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vel Music Festival</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <section class="border section-1">
+            <div class="logo-pic">
+                <a href="/"><img src="img/logo/veld.png" alt="VELD EVENT LOGO (replace this)"></a>
+            </div>
+             <div class="cart">
+                <span class="button"><i class="fas fa-shopping-cart"> <label id="lblProductCart"></label></i></span>
+            </div>
+            <div class="ham-burger">
+                <span class="button liIconMenu hideMenu"><button class="btn button btn-primary"><i class="fas fa-bars"></i></button></span>
+            </div>
+           
+        </section>
+        <nav class="hide-in-mobile main-navbar"> 
+             <ul class="topbar">
+                 <li> <a href="/">Home</a></li>
+                 <li> <a href="/products">BuyTicket</a></li>
+                 <li> <a href="/registration">Artist</a></li>
+                 <li> <a href="/login">Registration</a></li>
+                 <li> <a href="/login">Login</a></li>
+             </ul>
+        </nav>
+        <section class="border main-search-bar">
+            <div>
+                <form id="formMainSearch">
+                    <input type="date" >
+                    <select class="dropdownProduct" id="artistSelector" name="dropDownProductCategoryM">
+                      <option value="0">Select Artist</option>
+                      <option value="1">Sidhu Moose Wala</option>
+                      <option value="2">Justin Bieber</option>
+                      <option value="3">Kid Rock</option>
+                      <option value="5">Shakira</option>
+                      <option value="6">Taylor</option>
+                      <input type="button" value="Go">             
+                    </select>
+                </form>
+            </div>
+            <div class="search-btn">
+                <i class="fas fa-search-location"></i>
+            </div>
+        </section>
+    </header>
+    <div class="buy-ticket-btn first-word">
+       <h1 class="center">BUY TICKET</h1>
+    </div>
+    <section class="border main-register main-search-bar form-grid">
+      <div>
+        <h1>Select Your Ticket</h1>
+          <div class="grid-select-ticket">
+            <input type="radio" id="huey" name="vip" value="vip"
+                  checked>
+            <label for="huey">VIP </label>
+            <div>$599</div>
+          </div>
+
+          <div class="grid-select-ticket">
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Full Access</label>
+            <div>$299</div>
+          </div>
+
+          <div class="grid-select-ticket">
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Multi Day</label>
+            <div>$150</div>
+          </div>
+          <div class="grid-select-ticket">
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Single Day</label>
+            <div>$50</div>
+          </div>
+      </div>
+      <div>
+          <form id="formMainSearch" class="grid-registration">
+            <h1>Book Ticket</h1>
+            <label>First name</label>
+            <input type="text" id="firstName" placeholder=" John " name="textBoxName">
+            <label>Last name</label>
+            <input type="text" id="lastName" placeholder=" Doe " name="textBoxName">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="  @email.com" name="textBoxEmail">
+            <label>Address</label>
+            <input type="text" id="address" placeholder="  address" name="textBoxEmail">
+            <label>Phone Number</label>
+            <input type="number" id="phoneNumber" placeholder=" +1-647-333-222" name="textBoxEmail">
+            <!-- <label>Select Event</label>
+            <select class="dropdownProduct" id="eventSelector" name="dropDownProductCategoryM">
+              <option value="0">Select Event</option>
+              <option value="1">Event 1</option>
+              <option value="2">Event 2</option>
+              <option value="3">Event 3</option>
+              <option value="4">Event 4</option>
+              <option value="5">Event 5</option>
+              <option value="6">Event 6</option>
+            </select>
+            <label>Select Ticket</label>
+            <select class="dropdownProduct" id="ticketSelector" name="dropDownProductCategoryM">
+              <option value="0">Select Ticket</option>
+              <option value="1">VIP - $599</option>
+              <option value="2">Full Access - $299</option>
+              <option value="3">Multi Day $150</option>
+              <option value="4">Single Day $50</option>
+            </select> -->
+            <div class="buy-ticket-btn">
+             <input type="button" value="Buy Ticket">
+            </div>
+          </form>
+      </div>
+           
+        </section>
+        <footer class="footer">
+          <nav aria-label="Legal">
+            <ul class="mainFooter">
+              <li><a href="#">OUR SERVICES</a>
+                <ul>
+                  <li><a href="#">Festival Info</a></li>
+                  <li><a href="#">Ticket Info</a></li>
+                  <li><a href="#">RSVP To The Event</a></li>
+                  <li><a href="#">Get Updates</a></li>
+                  <li><a href="#">Coupons</a></li>
+                  <li><a href="#">Event Locator</a></li>
+                </ul>
+              </li>
+              <li><a href="#">EXPLORE</a>
+                <ul>
+                  <li><a href="#">Veld Music Festival</a></li>
+                </ul>
+              </li>
+              <li><a href="#">ABOUT</a>
+                <ul>
+                  <li><a href="#">Veld Music Festival</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </li>
+              <li><a href="#">CONTACT US</a>
+                <ul>
+                  <li><a href="#">Email Us</a></li>
+                  <li><a href="#">Call us: 1.800.333.1111</a></li>
+                </ul>
+              </li>
+              <li><a href="#">MAIN LOCATIONS</a>
+                <ul>
+                  <li><a href="#"> <select>
+                        <option value="0">Canada</option>
+                        <option value="1">America</option>
+                        <option value="2">India</option>
+                        <option value="3">United Kingdom</option>
+                      </select></a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="sociallinks">
+                  <li class="red"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li class="blue"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="red"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  <li class="blue"><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
+                  <li class="red"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <p class="copyright">Copyright <i class="far fa-copyright"></i> 2020 Veld Music Festival</p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+    </html>
