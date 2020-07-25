@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vel Music Festival</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="css/buy-ticket.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -23,11 +25,11 @@
         </section>
         <nav class="hide-in-mobile main-navbar"> 
              <ul class="topbar">
-                 <li> <a href="/">Home</a></li>
-                 <li> <a href="/products">BuyTicket</a></li>
-                 <li> <a href="/registration">Artist</a></li>
-                 <li> <a href="/login">Registration</a></li>
-                 <li> <a href="/login">Login</a></li>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="/buy-ticket.html">BuyTicket</a></li>
+                <li> <a href="/artist1.html">Artist</a></li>
+                 <li> <a href="/registration.html">Registration</a></li>
+                 <li> <a href="/login.html">Login</a></li>
              </ul>
         </nav>
         <section class="border main-search-bar">
@@ -53,36 +55,66 @@
     <div class="buy-ticket-btn first-word">
        <h1 class="center">BUY TICKET</h1>
     </div>
-    <section class="border main-register main-search-bar form-grid">
-      <div>
-        <h1>Select Your Ticket</h1>
-          <div class="grid-select-ticket">
-            <input type="radio" id="huey" name="vip" value="vip"
-                  checked>
-            <label for="huey">VIP </label>
-            <div>$599</div>
-          </div>
+    <section class="border full-section main-register main-search-bar form-grid">
+      <!-- Select your ticket  -->
+          <div class="ticket-event-section">
+             <div>
+              <h1>Select Your Ticket</h1>
+                <div class="grid-select-ticket">
+                  <input type="radio" id="huey" name="vip" value="vip"
+                        checked>
+                  <label for="huey">VIP </label>
+                  <div>$599</div>
+                </div>
 
-          <div class="grid-select-ticket">
-            <input type="radio" id="dewey" name="drone" value="dewey">
-            <label for="dewey">Full Access</label>
-            <div>$299</div>
-          </div>
+                <div class="grid-select-ticket">
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="dewey">Full Access</label>
+                  <div>$299</div>
+                </div>
 
-          <div class="grid-select-ticket">
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">Multi Day</label>
-            <div>$150</div>
+                <div class="grid-select-ticket">
+                  <input type="radio" id="louie" name="drone" value="louie">
+                  <label for="louie">Multi Day</label>
+                  <div>$150</div>
+                </div>
+                <div class="grid-select-ticket">
+                  <input type="radio" id="louie" name="drone" value="louie">
+                  <label for="louie">Single Day</label>
+                  <div>$50</div>
+                </div>
+            </div>
+            <!-- Select Event here -->
+            <div>
+            <h1>Select Event</h1>
+            <div class="grid-select-ticket">
+              <input type="radio" id="huey" name="vip" value="vip"
+                    checked>
+              <label for="huey">Sidhu Moose Wala </label>
+              <div>November,21,2020</div>
+            </div>
+
+            <div class="grid-select-ticket">
+              <input type="radio" id="dewey" name="drone" value="dewey">
+              <label for="dewey">Justin Bieber</label>
+              <div>December,25,2020</div>
+            </div>
+
+            <div class="grid-select-ticket">
+              <input type="radio" id="louie" name="drone" value="louie">
+              <label for="louie">Taylor</label>
+              <div>November,29,2020</div>
+            </div>
+            <div class="grid-select-ticket">
+              <input type="radio" id="louie" name="drone" value="louie">
+              <label for="louie">Shakira</label>
+              <div>April,20,2020</div>
+            </div>
           </div>
-          <div class="grid-select-ticket">
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">Single Day</label>
-            <div>$50</div>
-          </div>
-      </div>
+        </div>
       <div>
           <form id="formMainSearch" class="grid-registration">
-            <h1>Book Ticket</h1>
+            <h1 class="text-align"><span class="border-line"> Ticket</span></h1>
             <label>First name</label>
             <input type="text" id="firstName" placeholder=" John " name="textBoxName">
             <label>Last name</label>
@@ -93,24 +125,6 @@
             <input type="text" id="address" placeholder="  address" name="textBoxEmail">
             <label>Phone Number</label>
             <input type="number" id="phoneNumber" placeholder=" +1-647-333-222" name="textBoxEmail">
-            <!-- <label>Select Event</label>
-            <select class="dropdownProduct" id="eventSelector" name="dropDownProductCategoryM">
-              <option value="0">Select Event</option>
-              <option value="1">Event 1</option>
-              <option value="2">Event 2</option>
-              <option value="3">Event 3</option>
-              <option value="4">Event 4</option>
-              <option value="5">Event 5</option>
-              <option value="6">Event 6</option>
-            </select>
-            <label>Select Ticket</label>
-            <select class="dropdownProduct" id="ticketSelector" name="dropDownProductCategoryM">
-              <option value="0">Select Ticket</option>
-              <option value="1">VIP - $599</option>
-              <option value="2">Full Access - $299</option>
-              <option value="3">Multi Day $150</option>
-              <option value="4">Single Day $50</option>
-            </select> -->
             <div class="buy-ticket-btn">
              <input type="button" value="Buy Ticket">
             </div>

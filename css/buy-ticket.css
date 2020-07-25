@@ -1,0 +1,84 @@
+
+/* Buy Ticket Page*/
+.grid-select-ticket{
+    max-width: 30%;
+    display: flex;
+    justify-content: space-between
+}
+.buy-ticket-btn{
+    max-width: 100%;
+    margin-top: 2em;
+
+}
+.buy-ticket-btn input{
+    font-weight: bold;
+    padding: 1em;
+    background-color: green;
+    font-size: 1.2em;
+}
+.form-grid{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.ticket-event-section{
+    display: grid;
+}
+.buy-ticket-btn{
+    text-align: center;
+   margin-right: 1.8em;
+}
+.border-line{
+    width: 100%;
+    border-bottom:solid 0.1em green;
+}
+.text-align{
+    text-align: center;
+    margin-right: 2em;
+}
+.full-section{
+    margin-left: 15%;
+    max-width: 70%;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.first-word{
+    font-size: 1.5em;
+    margin-left: 13%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 40em)
+ {
+      /*For Tablet 640px*/
+ 
+      .ticket-event-section{
+       grid-template-columns: 1fr 1fr;
+    }
+      .buy-ticket-btn{
+        text-align: center;
+       margin-right: 1.8em;
+    }
+    .full-section{
+        padding: 1.2em;
+        font-size: 1.2rem;
+    }
+   
+  
+}
+
+/* ///////////////////////////////////////////////////////////////////////&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 55em)
+{
+  /*For window screen 880px*/
+    .full-section{
+        padding: 3em;
+        padding-left:10%;
+        font-size: 1.3em;
+    }
+    .buy-ticket-btn{
+        text-align: center;
+       margin-right: 10%;
+    }
+}

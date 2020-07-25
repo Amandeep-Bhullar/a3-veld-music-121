@@ -1,0 +1,66 @@
+
+body{
+    font-size:1em;
+}
+.name-of-artist{
+    color: var(--royal);
+    font-size: 2em;
+}
+.artist-bio p{
+    color: var(--light);
+    font-size: 0.8em;
+
+}
+.artist-img{
+text-align: center;
+}
+
+.artist-img img{
+    max-width: 90%;
+    border-radius: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copyright{
+    color: var(--loveclr);
+    font-weight: bold;
+}
+.artist-section{
+    position: relative;
+   font-size: 0.5em;
+}
+.heading{
+    font-size: 1.5em;
+    margin-top:0.1em ;
+    margin-left: 0em;
+}
+
+.blur{
+    color: white;
+    background-color: black;
+    opacity: 70%;
+    backdrop-filter: blur(3px);
+    font-family: sans-serif;
+}
+.artist-names{
+    background-color: black;
+    opacity: 70%;
+    backdrop-filter: blur(3px);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 40em)
+ {
+      /*For Tablet 640px*/
+   
+ 
+    }
+
+/* ///////////////////////////////////////////////////////////////////////&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 55em)
+{
+  /*For window screen 880px*/
+    body{
+        font-size:3em;
+    }
+  
+}

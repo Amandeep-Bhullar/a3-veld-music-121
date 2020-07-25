@@ -70,7 +70,7 @@ a {
     padding-left: 1em;
     border: var(--grey)solid 0.01em;
     box-shadow: 0em 0.2em 0.1em #616669;
-    max-width: 80%;
+   
 }  
 .hideMenu{
     text-align: center;     
@@ -84,6 +84,9 @@ a {
     border-radius: 50%;
     margin-top: 40em;
   
+}
+.go-btn{
+    padding: 1.5em;
 }
 .section-1{
     margin: 1em;
@@ -159,16 +162,23 @@ a {
     padding-left: 0.1em;
     padding-right: 0.1em;
     list-style: none !important;
-    width: 100%;
-    margin-left: 0.5em;
+    max-width: 100%;
     margin-bottom: 0.4em;
     text-align: left;
-    background-color: var(--darkgrey);
+
     opacity: 80%;
     font-family: Bellota;
 }
 .topbar{
+    margin: 0.1em 0;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 5.8%;
+    background-color: var(--darkgrey);
+}
+.dropdownProduct{
+    padding:0.3em;
 }
 .hide-in-mobile{
     display: none;
@@ -203,7 +213,7 @@ background-color: var(--dark);
 box-sizing: border-box;
 }
 .action-btn{
-    max-width: 80%;
+    /* max-width: 80%; */
     position: absolute;
     top: 0;
     left: 0;
@@ -217,8 +227,6 @@ box-sizing: border-box;
     opacity: 80%;
     box-sizing: border-box;
     overflow: hidden;
-}
-.action-btn{
     min-width: 50%;
     border-radius: 50%;
     color: var(--light);
@@ -281,11 +289,16 @@ li{
     text-align: center;
 }
 .event-links{
-    
+    width: 40%;
+    padding: 0.1em;
     text-align: center;
     display: flex;
     margin: 0.5em;
     justify-content: space-between;
+    margin-right: 5em;
+}
+.event-links a{
+   
 }
 .best-seller img{
     max-width: 50%;
@@ -388,7 +401,7 @@ margin-bottom: -18em;
     text-align: center;
     color: var(--loveclr);
     margin-left: 0.5em;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-top: 2em;
 }
 .event-links{
@@ -414,10 +427,15 @@ margin-bottom: -18em;
     color: var(--light-grey);
 }
 .date{
+    margin-left: 4em;
+    margin-right: 4em;
+border-radius: 2em;
     display: block;
-    color: green;
+    color: white;
     font-size: 0.7em;
-    opacity: 90%;
+    background-color:green;
+    opacity: 50%;
+    backdrop-filter: blur(4px);
 }
 .footer{
     background-color: var(--darkgrey);
@@ -444,6 +462,7 @@ footer a{
     border-radius: 2em;
     text-align: center;
 }
+
 /* img{
     position: relative;
     z-index: 10;
@@ -453,52 +472,6 @@ footer a{
 } */
 a{
     text-decoration: none;
-}
-/* Artist page css */
-.name-of-artist{
-    color: var(--royal);
-    font-size: 2em;
-}
-.artist-bio p{
-    color: var(--light);
-    font-size: 0.8em;
-
-}
-.artist-img{
-text-align: center;
-}
-
-.artist-img img{
-    max-width: 90%;
-    border-radius: 3em;
-    margin-left: auto;
-    margin-right: auto;
-}
-.copyright{
-    color: var(--loveclr);
-    font-weight: bold;
-}
-/* Registration Page */
-.grid-select-ticket{
-    max-width: 30%;
-    display: flex;
-    justify-content: space-between
-}
-.buy-ticket-btn{
-    max-width: 100%;
-    margin-top: 2em;
-
-}
-.buy-ticket-btn input{
-    font-weight: bold;
-    padding: 1em;
-    background-color: green;
-    font-size: 1.2em;
-}
-.form-grid{
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 40em)
@@ -533,6 +506,13 @@ text-align: center;
     .product-container-grid{
         grid-template-columns: 1fr 1fr;
     }
+    .border{
+        width: 98%;
+    }
+    .event-links{
+        margin-left: 3.5em;
+        width: 40%;
+    }
  }
 
 /* ///////////////////////////////////////////////////////////////////////&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/////////////////////////////////////////////////////////////////////// */
@@ -550,9 +530,12 @@ text-align: center;
         background-position: 0 0; 
     }*/
     /* /hide-in-mobile main-navbar" */
-.main-navbar{
-    display: block;
-}
+    .hide-in-mobile{
+        display: block;
+    }
+    .main-navbar{
+        display: block;
+    }
     .logo-pic img{
         min-width: 4%;
         max-width: 5%;
@@ -570,21 +553,22 @@ text-align: center;
         margin-top: 0.3em;
     }
     .topbar{
-        min-width: 96%;
+        box-sizing: border-box;
+        width: 100%;
         display: grid;
-        grid-template-columns: 50% 1fr 1fr 1fr 1fr;
-        margin-top: -1.6em;
-        padding-top: 0.5em;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        /* margin-top: -1.6em; */
+        /* padding-top: 0.5em; */
         margin-right: 2em;
     }
     .topbar li{
         text-align: right;
         border-bottom: 0em solid;
         margin-bottom: 0em;
-        background-color: var(--darkgrey);
-        padding: 0.1em;
+        /* background-color: var(--darkgrey); */
+        padding: 0.5em;
         padding-right: 0.1em;
-        margin-top: 0.9em;
+        
     }
     .topbar a{
         text-decoration: none;
@@ -607,14 +591,44 @@ text-align: center;
     }
     .product-container-grid{
         grid-template-columns: 1fr 1fr 1fr;
-    }    
+    }  
+    .center{
+        font-size: .5em;
+    }
 
-.red-h{
+    .red-h{
     color: var(--loveclr);
     font-family: ballota;
-    font-size: 4em;
-}
-.first-word{
-    font-size: 2em;
-}
+    font-size: 1.6em;
+    }
+    .first-word{
+        font-size: 2em;
+    }
+    .border{
+        width: 100%;
+        margin:0.1em;
+    }
+    .action-btn{
+        font-size: .5em;
+        max-width: 40%;
+        border-radius: 50%;
+        top: 45;
+        padding:4em;
+      
+    }
+    .red-h h1{
+        margin-top: 8em;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .event-links{
+        margin-left: 4em;
+        max-width: 30%;
+        padding-left: 1.5em;
+        padding-right: 1em;
+    }
+    footer{
+        font-size: 0.3em;
+    }
+
 }
